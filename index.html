@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Portafolio Luz</title>
+		<link rel="shortcut icon" href="./Other/images/Logo.svg" type="image/x-icon" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-	<div class="contenedor">
+	<body>
+		<div class="contenedor">
 			<nav class="navegacion">
-				<a href="https://www.google.com/">
-					<img src="other/img/logoicono.svg" alt="Logo Luz" class="logo" />
+				<a href="#bienvenido">
+					<img src="./Other/images/logoicono.svg" alt="Logo Luz" class="logo" />
 				</a>
 				<ul>
-					<li class="links"><a id="etiqueta" href="#">Perfil profesional</a></li>
+					<li class="links"><a id="etiqueta" href="#perfil">Perfil profesional</a></li>
 					<li class="links"><a href="#">Logros</a></li>
 					<li class="links"><a href="#">Obras</a></li>
 					<li class="links"><a href="#">Contáctame</a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="Bienvenidos">
-			<span></span>
-			<main class="vistaprincipal"></main>
-			<img src="other/img/Logo.svg" alt="">
-		</div>
+		<span></span>
+		<main class="vistaprincipal">
+			<div id="bienvenido" class="Bienvenidos">
+				<ul>
+					<li><h1>Bienvenido</h1></li>
+					<li><h3>a mi Portafolio</h3></li>
+				</ul>
+				<img id="logo" src="./Other/images/Logo.svg" alt="logo" />
+				<img id="decorado" src="./Other/images/arobienvenidos.png" alt="decoracion" />
+			</div>
+			<div id="perfil" class="Bienvenidos perfil">
+				<div class="containerDescripcion">
+					<img id="foto" src="./Other/images/foto.png" alt="perfil" />
+					<img id="marco" src="./Other/images/marcotext.png" alt="marco dorado" />
+					<div class="showText">
+						<p>Hola soy,</p>
+						<p>
+							Aldan Bornacelli, y <br />
+							soy ilustradora
+						</p>
+					</div>
+					<button id="btn-curriculo"></button>
+				</div>
+			</div>
+		</main>
 
- <!--
+		<!--
   #F5EFD6 beige
   #9EBEA2 verde
   #DEB7A4 PiEl
-  B9B
+  #B9B
   -->
-</body>
-
+	</body>
 </html>
