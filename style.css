@@ -147,7 +147,7 @@ main.vistaprincipal .Bienvenidos {
     z-index: -1;
 }
 
-main.vistaprincipal .Bienvenidos img {
+main.vistaprincipal>.Bienvenidos>img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -196,7 +196,7 @@ span {
     z-index: 10;
 }
 
-main.vistaprincipal .Bienvenidos img#logo {
+main.vistaprincipal>.Bienvenidos>img#logo {
     height: 70vh;
 }
 
@@ -218,17 +218,18 @@ main.vistaprincipal>.perfil>.containerDescripcion {
     background: #DEB7A4;
 }
 
-main.vistaprincipal>.perfil #foto {
+main.vistaprincipal>.perfil>.containerDescripcion>#foto {
     position: absolute;
-    top: 22%;
-    left: 47.5%;
-    width: 120%;
+    top: -45%;
+    left: -7%;
+    width: 100%;
 }
 
-main.vistaprincipal>.perfil #marco {
+main.vistaprincipal>.perfil>.containerDescripcion>#marco {
     position: absolute;
-    top: 20%;
-    width: 118%;
+    top: -40%;
+    right: -5%;
+    width: 100%;
 }
 
 main.vistaprincipal>.perfil #btn-curriculo {
@@ -263,4 +264,94 @@ main.vistaprincipal>.perfil .showText {
 
 main.vistaprincipal>.perfil .showText p:nth-child(1) {
     margin-bottom: 30px;
+}
+
+#logrosProfesionales.logros {
+    position: relative;
+    font-family: "Montserrat Extralight";
+    font-size: 1.5rem;
+}
+
+#logrosProfesionales.logros>#fondoVerde {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 65%;
+    background: #9EBEA2;
+}
+
+.logros>#fondoVerde>#certificado {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    display: flex;
+    transform: translateY(-50%);
+    width: 60%;
+}
+
+.logros>#fondoVerde>.containerTexto {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+}
+
+.logros>#fondoVerde>.containerTexto>ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.logros>#fondoVerde>.containerTexto>ul>li {
+    list-style: inside;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#Obras {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+
+#Obras>.Galeria {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    /* width: 100%; */
+    row-gap: 20px;
+    padding: 40px 20px;
+}
+
+#Obras>.Galeria>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#Obras>.Galeria>div>.mostrar {
+    position: relative;
+    display: flex;
+}
+
+#Obras>.Galeria>div>.mostrar.grande {
+    display: flex;
+    align-items: center;
+    height: 36rem;
+    width: 28rem;
 }
