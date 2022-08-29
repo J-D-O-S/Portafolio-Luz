@@ -9,98 +9,167 @@
 	</head>
 
 	<body>
-		<div class="contenedor">
-			<nav class="navegacion">
-				<a href="#bienvenido">
-					<img src="./Other/images/logoicono.svg" alt="Logo Luz" class="logo" />
-				</a>
-				<ul>
-					<li class="links"><a id="etiqueta" href="#perfil">Perfil profesional</a></li>
-					<li class="links"><a href="#logrosProfesionales">Logros</a></li>
-					<li class="links"><a href="#Obras">Obras</a></li>
-					<li class="links"><a href="#">Contáctame</a></li>
-				</ul>
-			</nav>
+		<span class="superior"></span>
+		<div class="">
+			<div class="contenedor">
+				<nav class="navegacion">
+					<a href="#bienvenido">
+						<img lazy src="./Other/images/logoicono.svg" alt="Logo Luz" class="logo" />
+					</a>
+					<ul>
+						<li class="links">
+							<a id="etiqueta" href="#perfil">Perfil profesional</a>
+						</li>
+						<li class="links"><a href="#logrosProfesionales">Logros</a></li>
+						<li class="links"><a href="#Obras">Obras</a></li>
+						<li class="links"><a href="#contacto">Contáctame</a></li>
+					</ul>
+				</nav>
+			</div>
+			<main class="vistaprincipal">
+				<div id="bienvenido" class="Bienvenidos">
+					<ul>
+						<li><h1>Bienvenido</h1></li>
+						<li><h3>a mi Portafolio</h3></li>
+					</ul>
+					<img lazy id="logo" src="./Other/images/logoicono.svg" alt="logo" />
+					<img
+						lazy
+						id="decorado"
+						src="./Other/images/arobienvenidos.png"
+						alt="decoracion"
+					/>
+				</div>
+				<div id="perfil" class="Bienvenidos perfil">
+					<div class="containerDescripcion">
+						<img lazy id="foto" src="./Other/images/foto.png" alt="perfil" />
+						<img
+							lazy
+							id="marco"
+							src="./Other/images/marcotext.png"
+							alt="marco dorado"
+						/>
+						<div class="showText">
+							<p>Hola soy,</p>
+							<p>
+								Aldan Bornacelli, y <br />
+								soy ilustradora
+							</p>
+						</div>
+						<a
+							href="https://drive.google.com/file/d/1VWvFi4iYSRUGSTAMEC8Vs5pZ9h-nVq_p/view?usp=sharing"
+							id="btn-curriculo"
+						></a>
+					</div>
+				</div>
+				<div id="logrosProfesionales" class="Bienvenidos logros">
+					<span id="fondoVerde">
+						<div class="containerTexto">
+							<ul>
+								<li>Premio nacional de<br />ilustración.</li>
+								<li>
+									Graduada con<br />honores en la<br />Universidad<br />Nacional.
+								</li>
+								<li>
+									Ganadora del premio<br />al artista joven del<br />año en la
+									categoria<br />ilustración digital.
+								</li>
+							</ul>
+						</div>
+						<img
+							lazy
+							id="certificado"
+							src="Other/images/certificado.svg"
+							alt="Certificado"
+						/>
+					</span>
+				</div>
+				<div id="Obras" class="Bienvenidos obras">
+					<div class="Galeria">
+						<div class="grandes">
+							<img
+								lazy
+								class="mostrar grande"
+								src="Other/images/Geisha1withmarco.svg"
+								alt="Geisha1"
+							/>
+							<img
+								lazy
+								class="mostrar grande"
+								src="Other/images/Geisha2withmarco.svg"
+								alt="Geisha2"
+							/>
+						</div>
+						<div class="pequenas">
+							<img
+								lazy
+								class="mostrar peque"
+								src="Other/images/Geisha3withmarco.svg"
+								alt="geisha3"
+							/>
+							<img
+								lazy
+								class="mostrar peque"
+								src="Other/images/Bulldogwithmarco.svg"
+								alt="labrador"
+							/>
+							<img
+								lazy
+								class="mostrar peque"
+								src="Other/images/Labradorwithmarco.svg"
+								alt="bulldog"
+							/>
+						</div>
+					</div>
+				</div>
+				<div id="contacto" class="Bienvenidos contacto">
+					<figure>
+						<img
+							lazy
+							src="./Other/images/rombocontact.svg"
+							alt="Me encantaría saber de ti"
+						/>
+						<form>
+							<h1>Escribeme</h1>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Correo electrónico"
+							/>
+							<textarea
+								name="mensaje"
+								id="mensaje"
+								cols="30"
+								rows="10"
+								placeholder="Escribe aquí..."
+							></textarea>
+							<button type="submit" id="btn-enviar">Enviar</button>
+							<footer>
+								<a href="http://www.instagram.com">
+									<ion-icon name="logo-instagram"></ion-icon>
+								</a>
+								<a href="http://www.facebook.com">
+									<ion-icon name="logo-facebook"></ion-icon>
+								</a>
+								<a href="http://www.pinterest.com">
+									<ion-icon name="logo-pinterest"></ion-icon>
+								</a>
+								<a href="http://www.linkedin.com">
+									<ion-icon name="logo-linkedin"></ion-icon>
+								</a>
+							</footer>
+						</form>
+						<span class="inferior"></span>
+					</figure>
+				</div>
+			</main>
 		</div>
-		<span></span>
-		<main class="vistaprincipal">
-			<div id="bienvenido" class="Bienvenidos">
-				<ul>
-					<li><h1>Bienvenido</h1></li>
-					<li><h3>a mi Portafolio</h3></li>
-				</ul>
-				<img id="logo" src="./Other/images/Logo.svg" alt="logo" />
-				<img id="decorado" src="./Other/images/arobienvenidos.png" alt="decoracion" />
-			</div>
-			<div id="perfil" class="Bienvenidos perfil">
-				<div class="containerDescripcion">
-					<img id="foto" src="./Other/images/foto.png" alt="perfil" />
-					<img id="marco" src="./Other/images/marcotext.png" alt="marco dorado" />
-					<div class="showText">
-						<p>Hola soy,</p>
-						<p>
-							Aldan Bornacelli, y <br />
-							soy ilustradora
-						</p>
-					</div>
-					<button id="btn-curriculo"></button>
-				</div>
-			</div>
-			<div id="logrosProfesionales" class="Bienvenidos logros">
-				<span id="fondoVerde">
-					<div class="containerTexto">
-						<ul>
-							<li>Premio nacional de<br />ilustración.</li>
-							<li>Graduada con<br />honores en la<br />Universidad<br />Nacional.</li>
-							<li>
-								Ganadora del premio<br />al artista joven del<br />año en la
-								categoria<br />ilustración digital.
-							</li>
-						</ul>
-					</div>
-					<img id="certificado" src="Other/images/certificado.svg" alt="Certificado" />
-				</span>
-			</div>
-			<div id="Obras" class="Bienvenidos obras">
-				<div class="Galeria">
-					<div class="grandes">
-						<img
-							class="mostrar grande"
-							src="Other/images/Geisha1withmarco.svg"
-							alt="Geisha1"
-						/>
-						<img
-							class="mostrar grande"
-							src="Other/images/Geisha2withmarco.svg"
-							alt="Geisha2"
-						/>
-					</div>
-					<div class="pequenas">
-						<img
-							class="mostrar peque"
-							src="Other/images/Geisha3withmarco.svg"
-							alt="geisha3"
-						/>
-						<img
-							class="mostrar peque"
-							src="Other/images/Bulldogwithmarco.svg"
-							alt="labrador"
-						/>
-						<img
-							class="mostrar peque"
-							src="Other/images/Labradorwithmarco.svg"
-							alt="bulldog"
-						/>
-					</div>
-				</div>
-			</div>
-		</main>
 
-		<!--
-  #F5EFD6 beige
-  #9EBEA2 verde
-  #DEB7A4 PiEl
-  #B9B
-  -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>

@@ -24,14 +24,13 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
-    /* align-content: flex-end; */
     min-width: 100vw;
-    min-height: 100vh;
+    height: fit-content;
 }
 
 .contenedor {
@@ -45,9 +44,6 @@ body {
     background: #F5EFD6;
     font-family: "Cinzel-Regular", Arial, Helvetica, sans-serif;
     z-index: 2;
-    /* z-index: -1; */
-    /* background: rgb(20, 55, 255); */
-    /* background: hsl(50, 39%, 50%); */
 }
 
 .contenedor>.navegacion {
@@ -70,7 +66,6 @@ body {
     justify-content: space-between;
     list-style: none;
     height: 60%;
-    /* font-family: "Cinzel-Regular", Arial, Helvetica, sans-serif; */
 }
 
 .contenedor>.navegacion ul a:hover {
@@ -188,15 +183,24 @@ main.vistaprincipal .Bienvenidos ul {
 
 span {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 3rem;
     background: #9EBEA2;
     z-index: 10;
 }
 
+body>span.superior {
+    top: 0px;
+    left: 0px;
+}
+
+span.inferior {
+    top: calc(100% - 3rem);
+    left: 0px;
+}
+
 main.vistaprincipal>.Bienvenidos>img#logo {
+    opacity: 0.3;
     height: 70vh;
 }
 
@@ -285,7 +289,7 @@ main.vistaprincipal>.perfil .showText p:nth-child(1) {
 
 .logros>#fondoVerde>#certificado {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 90%;
     display: flex;
     transform: translateY(-50%);
@@ -331,7 +335,6 @@ main.vistaprincipal>.perfil .showText p:nth-child(1) {
     display: flex;
     flex-direction: column;
     height: inherit;
-    /* width: 100%; */
     row-gap: 20px;
     padding: 40px 20px;
 }
@@ -354,4 +357,94 @@ main.vistaprincipal>.perfil .showText p:nth-child(1) {
     align-items: center;
     height: 36rem;
     width: 28rem;
+}
+
+#contacto>figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    gap: 20px 10rem;
+}
+
+#contacto>figure>img {
+    width: 40%;
+}
+
+#contacto>figure>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    gap: 20px;
+}
+
+#contacto>figure>form>h1 {
+    display: flex;
+    text-align: center;
+    font-family: "Cinzel-Bold";
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+
+#contacto>figure>form>#email {
+    text-align: center;
+    border-radius: 5px;
+    height: 2rem;
+    width: 70%;
+    font-family: "AnonymousPro Bold";
+}
+
+#contacto>figure>form>#mensaje {
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+    font-family: "AnonymousPro Bold";
+}
+
+#contacto>figure>form>#btn-enviar {
+    padding: 1rem 2rem;
+    font-family: "AnonymousPro Bold";
+    font-size: 1rem;
+    background-color: #DEB7A4;
+    border-radius: 5px;
+    border: 5px dashed hsl(20, 28%, 58%);
+    cursor: pointer;
+    color: hsl(30, 4%, 9%);
+}
+
+#contacto>figure>form>#btn-enviar:hover {
+    background-color: hsl(20, 28%, 58%);
+    border: 5px dashed #DEB7A4;
+    animation: click 1.4s linear 1;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#contacto>figure>form>footer {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contacto>figure>form>footer ion-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
 }
